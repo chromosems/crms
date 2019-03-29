@@ -1,14 +1,17 @@
 @extends('admin.layouts.app')
 
 @section('content')
+
     <div class="row">
 
-        @if(session('success'))
-            <div class="alert-alert-success">
+       
+        <div class="col-sm-5">
+ @if(session('success'))
+            <div class=" alert alert-success mb-3">
                 {{session('success')}}
             </div>
         @endif
-        <div class="col-sm-5">
+        
             <div class="card">
                 <div class="card-header">User Details
 
@@ -85,6 +88,7 @@
 @endsection
 @push('admin.layouts.scripts.scripts')
     <script src="{{asset('js/admin/user.js')}}"></script>
+    
 @endpush
 @push('admin.layouts.styles')
     <link rel="stylesheet" href="{{asset('css/admin/user.css')}}">

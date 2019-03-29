@@ -16,8 +16,10 @@ class CheckActive
      */
     public function handle($request, Closure $next)
     {
-        if (! Auth::user()->isActive === 1) {
+        if (!Auth::user()->isActive ==1) {
             Auth::logout();
+            //message not returning bse its lost inbetweeen logout
+            return redirect('/')->with('not_active','your account is not active','contact system admin');
         }
         return $next($request);
     }

@@ -1,19 +1,21 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 
 class UsersController extends Controller
+
 {
+
     public function index()
     {
         $users = User::all();
         return view('admin.users', compact('users'));
     }
+
 
     public function getUser(Request $request, $id)
     {

@@ -4,6 +4,12 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+          
+            @if(session('not_active'))
+            <div class="alert alert-danger">
+                {{session('not_active')}}
+            </div>
+            @endif
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 

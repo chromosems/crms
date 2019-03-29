@@ -92,13 +92,4 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
 @endsection

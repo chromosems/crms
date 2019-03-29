@@ -38,3 +38,24 @@
     color: white;
 
 }
+
+/* Modal styles*/
+
+/*.modal-content {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}*/
+
+.modal-style{
+    width: 60%;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    box-shadow:0 0 50px darkgrey;
+}
